@@ -61,7 +61,7 @@ class Login extends Component {
       password,
     }
 
-    const response = await fetch('http://localhost:3000/login', {
+    const response = await fetch('https://ai-trip-planner-v4y6.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -35,7 +35,7 @@ class TripDetails extends Component {
     const {tripId} = match.params
 
     const response = await fetch(
-      `http://localhost:3000/trips/${tripId}/itinerary`,
+      `https://ai-trip-planner-v4y6.onrender.com/trips/${tripId}/itinerary`,
       {
         headers: {
           Authorization: `Bearer ${jwtToken}`,
@@ -65,7 +65,7 @@ class TripDetails extends Component {
     const {tripId} = match.params
 
     const response = await fetch(
-      `http://localhost:3000/trips/${tripId}`,
+      `https://ai-trip-planner-v4y6.onrender.com/trips/${tripId}`,
       {
         method: 'DELETE',
         headers: {

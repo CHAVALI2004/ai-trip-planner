@@ -56,7 +56,7 @@ class ForgotPassword extends Component {
     }
 
     const response = await fetch(
-      'http://localhost:3000/forgot-password',
+      'https://ai-trip-planner-v4y6.onrender.com/forgot-password',
       {
         method: 'PUT',
         headers: {

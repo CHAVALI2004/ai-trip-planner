@@ -95,7 +95,7 @@ class CreateTrip extends Component {
     }
 
     const response = await fetch(
-      'http://localhost:3000/trips',
+      'https://ai-trip-planner-v4y6.onrender.com/trips',
       options,
     )
 

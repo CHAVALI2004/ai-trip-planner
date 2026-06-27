@@ -60,7 +60,7 @@ class Register extends Component {
       password,
     }
 
-    const response = await fetch('http://localhost:3000/register', {
+    const response = await fetch('https://ai-trip-planner-v4y6.onrender.com/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
