@@ -1,0 +1,145 @@
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  font-family: 'Roboto';
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.welcome-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 20px 0 8px;
+}
+
+.welcome-description {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 80vh;
+}
+
+.failure-container,
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.failure-image,
+.empty-image {
+  width: 320px;
+  max-width: 90%;
+  margin-bottom: 24px;
+}
+
+.failure-heading,
+.empty-heading {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.failure-description,
+.empty-description {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+.retry-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 15px;
+}
+
+.retry-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 991px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .welcome-heading {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .main-container {
+    padding: 16px;
+    padding-bottom: 80px;
+  }
+
+  .welcome-heading {
+    font-size: 24px;
+  }
+
+  .welcome-description {
+    font-size: 14px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .failure-image,
+  .empty-image {
+    width: 240px;
+  }
+
+  .failure-heading,
+  .empty-heading {
+    font-size: 22px;
+  }
+
+  .failure-description,
+  .empty-description {
+    font-size: 14px;
+  }
+}

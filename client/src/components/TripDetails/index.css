@@ -1,0 +1,285 @@
+.trip-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+/* ---------- Banner ---------- */
+
+.trip-banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(15, 23, 42, 0.75),
+    rgba(15, 23, 42, 0.25)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 50px;
+}
+
+.destination-heading {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.trip-route {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.trip-info {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ---------- Sections ---------- */
+
+.section-heading {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* ---------- Weather ---------- */
+
+.weather-section {
+  margin-bottom: 40px;
+}
+
+.weather-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.weather-card {
+  min-width: 170px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.weather-date {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.weather-icon {
+  width: 70px;
+  height: 70px;
+  margin: 10px 0;
+}
+
+/* ---------- Itinerary ---------- */
+
+.itinerary-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.itinerary-card {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 24px;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.itinerary-image {
+  width: 280px;
+  object-fit: cover;
+}
+
+.itinerary-details {
+  flex: 1;
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.day-text {
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.itinerary-title {
+  color: #1e293b;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.itinerary-description {
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ---------- Delete ---------- */
+
+.delete-button {
+  margin-top: 30px;
+  align-self: center;
+
+  width: 260px;
+  height: 48px;
+
+  border: 2px solid #ef4444;
+  background: transparent;
+
+  color: #ef4444;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.delete-button:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+/* ---------- Loader ---------- */
+
+.loader-container,
+.failure-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ---------- Tablet ---------- */
+
+@media screen and (max-width: 992px) {
+  .trip-banner {
+    height: 340px;
+  }
+
+  .destination-heading {
+    font-size: 38px;
+  }
+
+  .itinerary-card {
+    flex-direction: column;
+  }
+
+  .itinerary-image {
+    width: 100%;
+    height: 240px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media screen and (max-width: 767px) {
+  .trip-details-container {
+    padding: 16px;
+    padding-bottom: 80px;
+  }
+
+  .trip-banner {
+    height: 260px;
+  }
+
+  .banner-overlay {
+    padding: 20px;
+    justify-content: flex-end;
+  }
+
+  .destination-heading {
+    font-size: 28px;
+  }
+
+  .trip-route {
+    font-size: 16px;
+  }
+
+  .trip-info {
+    font-size: 14px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+  }
+
+  .weather-card {
+    min-width: 140px;
+  }
+
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .itinerary-image {
+    height: 200px;
+  }
+
+  .itinerary-details {
+    padding: 18px;
+  }
+
+  .itinerary-title {
+    font-size: 20px;
+  }
+
+  .itinerary-description {
+    font-size: 14px;
+  }
+
+  .delete-button {
+    width: 100%;
+  }
+}
